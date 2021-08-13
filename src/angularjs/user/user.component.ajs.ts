@@ -1,20 +1,19 @@
-export const ajsUserComponent = ['ajsUser', {
-  template: `
+export const ajsUserComponent = [
+  'ajsUser',
+  {
+    template: `
     <div class="component">
       <h2>Angular JS Component</h2>
       <p>
-        Hi! I am {{ $ctrl.username }}, 
-        follow me on Twitter <code>{{ $ctrl.twitter }}</code> to get notfied about cool Angular stuff!
+        Hi! I am {{ $ctrl.username }}
       </p>
-      <button ng-click="$ctrl.select($ctrl.username)">Select</button> (check console)
+      <button ng-click="$ctrl.select($ctrl.username)">Update username</button>
     </div>
   `,
-  bindings: {
-    username: '<',
-    twitter: '<',
-    select: '&'
-  },
-  controller: [
-    function () {}
-  ]
-}]
+    bindings: {
+      username: '<',
+      select: '&'
+    },
+    controller: [function() {}]
+  }
+];

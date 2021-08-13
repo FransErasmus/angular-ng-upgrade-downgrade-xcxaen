@@ -1,22 +1,16 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class UserService {
-
   getUser() {
     return {
-      display: 'Tomas',
-      username: 'tomastrajan',
-      twitter: '@tomastrajan'
-    }
+      username: 'AngularUser'
+    };
   }
-
 }
 
 export interface User {
-  display: string;
   username: string;
-  twitter: string;
 }

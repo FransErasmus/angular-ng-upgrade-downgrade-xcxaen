@@ -1,5 +1,5 @@
 <div class="component">
-  <h2>Hello from {{name}} component</h2>
+  <h2>Hello from {{user.username}}</h2>
   <button (click)="updateUsername()">Update username</button>
-  <ajs-user [username]="user.username" [twitter]="user.twitter" (select)="onSelect($event)"></ajs-user>
+  <ajs-user [username]="user.username" (select)="updateUsername()"></ajs-user>
 </div>

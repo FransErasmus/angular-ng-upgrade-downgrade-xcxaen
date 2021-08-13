@@ -5,7 +5,6 @@ import { downgradedAngularAppModule } from '../../angular';
 
 import { angularjsUserModule } from '../user/user.module.ajs';
 
-import { ajsAppComponent } from './app.component.ajs';
 import { ajsAppServiceFactory } from './app.service.ajs';
 
 export const angularjsAppModule = 'ajs-app-module';
@@ -22,11 +21,4 @@ angular
     downgradedAngularAppModule
   ])
   // force Angular initialization so that we can use Angular injectables in Angular JS
-  .run([
-    '$location',
-    function($location) {
-      $location.path('/angular');
-    }
-  ])
-  .factory(...ajsAppServiceFactory)
-  .component(...ajsAppComponent);
+  .factory(...ajsAppServiceFactory);

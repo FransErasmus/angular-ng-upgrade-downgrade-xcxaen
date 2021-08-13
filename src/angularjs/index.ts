@@ -9,7 +9,6 @@ import {
 } from '@angular/core';
 import { UpgradeComponent } from '@angular/upgrade/static';
 
-import { ajsUserComponent } from './user/user.component.ajs';
 import { AjsAppService } from './app/app.service.ajs';
 
 // Export every item from Angular JS application which will be used in the Angular part
