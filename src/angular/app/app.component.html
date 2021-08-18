@@ -1,5 +1,8 @@
 <div class="component">
-  <h2>Hello from {{user.username}}</h2>
+  <h2>Angular Component</h2>
+  <p>
+    Hi! I am {{user.username}}
+  </p>
   <button (click)="updateUsername()">Update username</button>
   <ajs-user [username]="user.username" (select)="updateUsername()"></ajs-user>
 </div>

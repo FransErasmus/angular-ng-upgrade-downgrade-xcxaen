@@ -13,7 +13,7 @@ angular.bootstrap(
 // Angular part is lazy by default but we have to force it's initialization if we want
 // to use any Angular services in the ANgular JS part ( see app/app.module.ajs.ts )
 
-// The support fort multiple downgradeModule in a single Angular JS app is comming soon
+// The support for multiple downgradeModule in a single Angular JS app is comming soon
 // which can play nicely with their lazy nature ( see https://github.com/angular/angular/pull/26217 )
 
 // Check out index.ts in both angular and angularjs folders
